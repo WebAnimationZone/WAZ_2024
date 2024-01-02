@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>On-Scroll Folding Cardboard Box with Three.js & GSAP</title>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+				
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+	</head>
+	<body>
+		<main>
+			
+			<div class="content">
+				<div class="page">
+					<div class="container">
+						<canvas id="box-canvas"></canvas>
+						<div class="ui-controls">
+							<button class="unbutton ui-controls__button" id="zoom-in" aria-label="Zoom in">+</button>
+							<button class="unbutton ui-controls__button" id="zoom-out" aria-label="Zoom out">-</button>
+							<div>Scroll to animate</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<script type="importmap">
+		  {
+			"imports": {
+			  "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+			  "three/addons/": "https://unpkg.com/three@0.138.0/examples/jsm/"
+			}
+		  }
+		</script>
+
+		<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+		<script src='https://unpkg.co/gsap@3/dist/ScrollTrigger.min.js'></script>
+
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>
+
